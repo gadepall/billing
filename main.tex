@@ -1,0 +1,57 @@
+% Latex Bill template 
+
+% By GVV Sharma
+% October 11, 2024
+
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1cm}
+%\geometry{a4paper, margin=1in}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tfrupee}
+    \usepackage[latin1]{inputenc}                                 %%
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+%  optionally (for landscape tables embedded in another document): %%
+    \usepackage{lscape}                                           %%
+%%                                                                  %%
+%\definecolor{saffron}{rgb}{1.0, 0.75, 0.24}
+\definecolor{atomictangerine}{rgb}{1.0, 0.6, 0.4}
+\definecolor{brightturquoise}{rgb}{0.03, 0.91, 0.87}
+%\definecolor{atomictangerine}{rgb}{1.0, 0.49, 0.0}
+\definecolor{yellow1}{rgb}{0.95,0.77,0.2}
+
+\def\inputGnumericTable{}                                 %%
+\begin{document}
+
+%\begin{center}
+\begin{flushleft}
+	%Company logo
+\includegraphics[scale=0.1]{figs/logo} % adjust width of the figure
+} 
+	\\
+	{\large Company Address}
+    \\
+	\rule{6.5cm}{0.1pt}
+\end{flushleft}
+%\end{center}
+
+%Bill Format
+\input{tables/table.tex}                             %%
+
+%Your signature
+\begin{flushright}
+\includegraphics[scale=0.03]{figs/sign}
+\\
+Authorized Signatory
+\end{flushright}
+
+\end{document}
+
